@@ -49,7 +49,7 @@ public class Gmailsignin {
 				passwordNextButton.click();
 
 				// Wait for the presence of Compose element on the page
-				wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[contains(text(),'Compose')]")));
+				wait.until(ExpectedConditions.presenceOfAllElementLocatedBy(By.xpath("//div[contains(text(),'Compose')]")));
 
 				// Close the driver
 				driver.close();
