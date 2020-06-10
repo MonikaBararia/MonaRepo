@@ -34,7 +34,7 @@ public class Gmailsignin {
 
 				// Sign in to google
 				WebElement emailTextField = driver.findElement(By.xpath("//input[@type='email']"));
-				emailTextField.sendKeys("monika.bararia@techcellence.com");
+				emailTextField.sendKeys("Add ur Email");
 
 				// Click on Next Button
 				WebElement nextButton = driver.findElement(By.xpath("//span[contains(text(),'Next')]"));
@@ -42,7 +42,7 @@ public class Gmailsignin {
 
 				// Enter Your Password
 				WebElement passwordTextField = driver.findElement(By.xpath("//input[@name='password']"));
-				passwordTextField.sendKeys("monika*$");
+				passwordTextField.sendKeys("Add your password");
 
 				// Click on Next Button
 				WebElement passwordNextButton = driver.findElement(By.xpath("//span[contains(text(),'Next')]"));
