@@ -1,6 +1,5 @@
 //Set up Selenium Env and automate the login process of gmail login.
 
-
 package com.practice.interviewquestions;
 
 import java.util.concurrent.TimeUnit;
@@ -49,8 +48,8 @@ public class Gmailsignin {
 				passwordNextButton.click();
 
 				// Wait for the presence of Compose element on the page
-				wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[contains(text(),'Compose')]")));
-
+				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Compose')]")));
+                  
 				// Close the driver
 				driver.close();
 
