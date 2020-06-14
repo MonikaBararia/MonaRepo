@@ -1,0 +1,1 @@
+select max(Salary) from Employee1 where salary not in (select max(Salary) from Employee1 );
