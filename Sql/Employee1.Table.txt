@@ -1,0 +1,6 @@
+use movie;
+create table Employee1(Id int auto_increment primary key, Salary int (30) not null);
+insert into Employee1 (Salary) values(100);
+insert into Employee1 (Salary)values(200);
+insert into Employee1 (Salary)values(300);
+select*from Employee1;
