@@ -1,0 +1,23 @@
+use movie;
+create table personreport
+(PersonID int auto_increment primary key, 
+Firstname varchar(30) not null,
+Lastname varchar(20) not null);
+
+insert into personreport(FirstName,Lastname) values("Monika","Bararia");
+insert into personreport (FirstName,Lastname) values("Riya","Nahata");
+select*from personreport;
+
+create table Address2
+(AddressID int auto_increment primary key, 
+PersonID int(10)not null,
+city varchar(30) not null,
+state varchar(20) not null);
+
+insert into Address2(PersonID,city,state) values(1,"Santaclarita","CA");
+insert into Address2(PersonID,city,state) values(2,"ThousandOaks","CA");
+select*from Address2;
+
+select FirstName, Lastname, City, State 
+from personreport p 
+left join Address2 a on p.PersonID = a.PersonID;
